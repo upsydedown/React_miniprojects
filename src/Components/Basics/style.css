@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@500&display=swap");
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(211, 152, 43);
+}
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: rgba(255, 94, 0, 0.25);
+    border-radius: 1rem;
+    border: 5px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 94, 0);
+}
+
+.font {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -0.5rem;
+}
+
+.card {
+    overflow: hidden;
+    background-color: whitesmoke;
+    max-width: 40rem;
+    max-height: 40rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    transition: all 0.15s ease-in;
+}
+
+.card:hover,
+.card:focus {
+    z-index: 3;
+    box-shadow: 0px 3px 9px 0.9px rgba(29, 29, 29, 0.445);
+}
+
+.card-body {
+    align-items: flex-start;
+    flex-flow: column wrap;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.card-number {
+    text-align: center;
+    font-size: 1.5rem;
+    width: 2rem;
+}
+
+.card-circle {
+    border-radius: 50%;
+    width: 2.5rem;
+    border: 1px solid grey;
+}
+
+.card-description {
+    font-size: 1.25rem;
+    letter-spacing: 0.5px;
+    width: 20rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card-title {
+    /* margin: 0rem 0rem 0rem 0rem; */
+    font-size: 2.5rem;
+}
+
+.card-author {
+    background-color: rgb(255, 94, 0);
+    border-radius: 5px;
+    height: 2rem;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+    position: relative;
+    text-align: center;
+    left: 3rem;
+    top: -2.35rem;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 7px 0.5px rgba(29, 29, 29, 0.445);
+}
+
+.read {
+    margin-top: 0.25rem;
+    color: rgb(39, 223, 3);
+    position: relative;
+    width: 5rem;
+    height: 2rem;
+    border: 0px;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    left: 17.05rem;
+    transition: all 0.15s ease-in;
+    background-color: transparent;
+}
+
+.read:hover,
+.read:focus {
+    box-shadow: 0px 2px 7px 0.5px rgba(29, 29, 29, 0.445);
+    color: whitesmoke;
+    background-color: rgb(39, 235, 0);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.img-box {
+    margin: 0.5rem 0.5rem 0.5rem 0rem;
+    width: 105%;
+    height: 20rem;
+    overflow: hidden;
+}
+
+.img-box:hover {
+    box-shadow: 0px 2px 7px 0.5px rgba(29, 29, 29, 0.445);
+}
+
+.logo {
+    width: 130%;
+    height: 20rem;
+    transition: all 0.25s ease-in-out;
+    flex-wrap: nowrap;
+}
+
+.logo:hover {
+    transform: scale(1.2);
+}
+
+.btn-group {
+    margin: 1rem 1.5rem 2rem 1.5rem;
+    position: relative;
+    left: 0.15rem;
+}
+
+.btn-group-item {
+    border: 0px;
+    text-align: center;
+    background-color: transparent;
+    font-size: 1.25rem;
+    margin: 0rem 0rem 0rem 0rem;
+    width: 9rem;
+    height: 2.75rem;
+    transition: all 0.15s ease-in-out;
+    z-index: 1;
+}
+
+.btn-group-item:hover {
+    line-height: 2px;
+    border-radius: 5px;
+    font-size: 1rem;
+    opacity: 0.8;
+    border-bottom: 12px solid rgb(36, 102, 245);
+    border-top: 12px solid rgb(255, 94, 0);
+    cursor: pointer;
+    width: 10rem;
+}
+
+.main-body {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 25rem);
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 700px) and (max-width: 1920px) {
+    .main-body {
+        grid-template-columns: repeat(auto-fill, 35rem);
+    }
+
+    .read {
+        font-size: 1.25rem;
+        left: 27.1rem;
+    }
+
+    .card-description {
+        width: 32rem;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .img-box {
+        width: 103.5%;
+    }
+
+    .btn-group-item {
+        font-size: 1.75rem;
+    }
+
+    .btn-group-item:hover {
+        font-size: 1rem;
+        opacity: 0.8;
+        width: 10rem;
+    }
+}
