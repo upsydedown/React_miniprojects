@@ -9,9 +9,31 @@
 body {
     background-color: rgb(211, 152, 43);
 }
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-clip: content-box;
+    background-color: rgba(255, 94, 0, 0.25);
+    border-radius: 1rem;
+    border: 5px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(255, 94, 0);
+}
+
 .font {
     font-family: "Hind Siliguri", sans-serif;
 }
+
 .container {
     position: relative;
     display: flex;
@@ -111,6 +133,7 @@ body {
     height: 20rem;
     overflow: hidden;
 }
+
 .img-box:hover {
     box-shadow: 0px 2px 7px 0.5px rgba(29, 29, 29, 0.445);
 }
@@ -171,16 +194,19 @@ body {
         font-size: 1.25rem;
         left: 27.1rem;
     }
+
     .card-description {
         width: 32rem;
     }
+
     .logo {
         width: 100%;
     }
+
     .img-box {
         width: 103.5%;
     }
-    
+
     .btn-group-item {
         font-size: 1.75rem;
     }
