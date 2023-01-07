@@ -1,8 +1,148 @@
-*{
+* {
     padding: 0rem;
     margin: 0rem;
+    box-sizing: border-box;
 }
 
-body{
-    background-color: grey;
+body {
+    background-color: rgb(230, 255, 255);
+}
+
+.main-body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-flow: column wrap; */
+}
+
+.content-box {
+    gap: 0.75rem;
+    flex-flow: column wrap;
+    width: 30rem;
+    height: 40rem;
+    border-radius: 5px;
+}
+
+.form-control {
+    position: relative;
+    left: -0.1rem;
+    height: 2rem;
+    width: 15rem;
+    outline: 0rem;
+    border: 0px;
+    border-radius: 8px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: rgb(6, 206, 206);
+}
+
+.form-control:focus {
+    border: 1px solid rgb(6, 206, 206);
+    box-shadow: 0px 2px 7px 0.1px rgba(29, 29, 29, 0.245);
+}
+
+.add-btn {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+    top: 0.1rem;
+    left: -1.5rem;
+    font-size: 1.1rem;
+    transition: all 0.2s ease-in-out;
+    color: grey;
+}
+
+.add-btn:hover {
+    color: rgb(6, 206, 206);
+}
+
+.add-btn:hover,
+.edit-btn:hover,
+.trash-btn:hover {
+    transform: scale(1.2);
+}
+
+.icon-btn {
+    position: relative;
+    top: -1.15rem;
+    left: 9.75rem;
+    font-size: 0.8rem;
+}
+
+.edit-btn {
+    color: rgb(6, 206, 206);
+    margin-right: .5rem;
+    font-size: 0.8rem;
+    transition: all 0.15s ease-in-out;
+}
+
+.edit-btn:hover {
+    color: rgb(10, 81, 233);
+}
+
+.trash-btn {
+    color: rgb(6, 206, 206);
+    transition: all 0.15s ease-in-out;
+}
+
+.trash-btn:hover {
+    color: red;
+}
+
+.show-btn {
+    margin-top: 3rem;
+    height: 2rem;
+    width: 5rem;
+    border: 0px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    color: rgb(6, 206, 206);
+    background-color: transparent;
+    transition: all 0.15s ease-in-out;
+}
+
+.show-btn:hover {
+    transform: scale(1.2);
+    background-color: rgb(6, 206, 206);
+    box-shadow: 0px 2px 8px 0.9px rgba(29, 29, 29, 0.445);
+    color: white;
+}
+
+.image-box {
+    position: relative;
+    top: -5rem;
+}
+
+.logo {
+    width: 18rem;
+    height: 18rem;
+}
+
+.item-list {
+    flex-flow: column wrap;
+    gap: 0.75rem;
+}
+
+.items {
+    height: 1.3rem;
+    width: 13rem;
+}
+
+.text {
+    border: 1px solid rgb(6, 206, 206);
+    font-size: 0.9rem;
+    text-align: left;
+    height: 1.5rem;
+    width: 12rem;
+    padding: 0.1rem 0.5rem 0rem 0.5rem;
+    border-radius: 3px;
+    color: rgb(6, 206, 206);
 }
