@@ -1,0 +1,66 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css);
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: navy;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.weather-content-box {
+    flex-flow: column wrap;
+    background-color: white;
+    border-radius: 10px;
+    height: 25rem;
+    width: 22rem;
+    margin: 1rem 0.5rem 1rem 0.5rem;
+    overflow: hidden;
+    /* padding: 0.5rem 0.5rem 1rem 0.5rem; */
+}
+
+.weather-icon {
+    width: 100%;
+    height: 7rem;
+    background-image: linear-gradient(180deg, rgb(134, 211, 255), rgb(61, 184, 255), rgb(24, 149, 252));
+    text-align: center;
+}
+.weather-icon i {
+    position: relative;
+    top: 1rem;
+    font-size: 5rem;
+    color: white;
+}
+
+.temp-box {
+    height: 8rem;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+}
+
+.weather-info-box {
+    justify-content: center;
+    height: 100%;
+    width: 70%;
+    text-align: center;
+}
+
+.date-time-box {
+    justify-content: center;
+    text-align: center;
+    word-wrap: break-word;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(55, 55, 55);
+}
